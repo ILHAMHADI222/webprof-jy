@@ -536,89 +536,140 @@
         font-weight: 400;
       }
 
-      /* ===== TESTIMONI ===== */
-      .testimonials {
+      /* ===== PARTNER SECTION (Mengganti Testimoni) ===== */
+      .partners {
         background: white;
       }
 
-      .testimonial-slider {
-        max-width: 800px;
-        margin: 0 auto;
+      .partners-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 40px;
+        margin-top: 40px;
+      }
+
+      .partner-card {
+        background: white;
+        border-radius: 15px;
+        padding: 30px;
+        text-align: center;
+        box-shadow: var(--shadow);
+        transition: var(--transition);
+        border: 1px solid rgba(42, 92, 126, 0.1);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .partner-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(42, 92, 126, 0.15);
+      }
+
+      .partner-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+      }
+
+      .partner-avatar {
+        width: 140px;
+        height: 140px;
+        margin: 0 auto 25px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 4px solid var(--secondary);
+        box-shadow: 0 8px 20px rgba(212, 167, 106, 0.3);
         position: relative;
       }
 
-      .testimonial-card {
-        background: white;
-        border-radius: 15px;
-        padding: 40px;
-        box-shadow: var(--shadow);
-        text-align: center;
-        margin: 0 20px;
-        border: 1px solid rgba(42, 92, 126, 0.1);
-      }
-
-      .testimonial-avatar {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        overflow: hidden;
-        margin: 0 auto 20px;
-        border: 4px solid var(--secondary);
-        box-shadow: 0 4px 12px rgba(212, 167, 106, 0.3);
-      }
-
-      .testimonial-avatar img {
+      .partner-avatar img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        transition: var(--transition);
       }
 
-      .testimonial-text {
-        font-size: 1.1rem;
-        font-style: italic;
-        margin-bottom: 20px;
+      .partner-card:hover .partner-avatar img {
+        transform: scale(1.05);
+      }
+
+      .partner-card h3 {
+        font-size: 1.5rem;
+        color: var(--primary);
+        margin-bottom: 8px;
+      }
+
+      .partner-specialization {
+        color: var(--accent);
+        font-weight: 600;
+        margin-bottom: 15px;
+        font-size: 1rem;
+        display: inline-block;
+        padding: 6px 18px;
+        background: rgba(139, 69, 19, 0.1);
+        border-radius: 20px;
+      }
+
+      .partner-description {
         color: var(--text);
-        line-height: 1.8;
+        line-height: 1.7;
+        margin-bottom: 25px;
+        font-size: 1rem;
       }
 
-      .testimonial-author {
+      .partner-experience {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        margin-top: 25px;
+        padding-top: 25px;
+        border-top: 1px solid rgba(42, 92, 126, 0.1);
+      }
+
+      .experience-item {
+        text-align: center;
+      }
+
+      .experience-number {
+        font-size: 1.8rem;
         font-weight: 700;
         color: var(--primary);
-        margin-bottom: 5px;
+        line-height: 1;
       }
 
-      .testimonial-role {
-        color: var(--accent);
-        font-size: 0.9rem;
-        font-weight: 500;
+      .experience-label {
+        font-size: 0.85rem;
+        color: var(--gray);
+        margin-top: 5px;
       }
 
-      .slider-controls {
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-        margin-top: 30px;
+      .partner-contact {
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid rgba(42, 92, 126, 0.1);
       }
 
-      .slider-btn {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background: white;
-        border: 2px solid var(--primary);
-        color: var(--primary);
-        display: flex;
+      .partner-contact a {
+        display: inline-flex;
         align-items: center;
         justify-content: center;
-        cursor: pointer;
-        transition: var(--transition);
-        box-shadow: 0 4px 12px rgba(42, 92, 126, 0.1);
-      }
-
-      .slider-btn:hover {
+        gap: 8px;
+        padding: 10px 20px;
         background: var(--primary);
         color: white;
-        border-color: transparent;
+        border-radius: 8px;
+        font-weight: 500;
+        transition: var(--transition);
+      }
+
+      .partner-contact a:hover {
+        background: #1f4a65;
+        transform: translateY(-3px);
       }
 
       /* ===== CONTACT ===== */
@@ -708,7 +759,8 @@
       }
 
       .form-group input,
-      .form-group textarea {
+      .form-group textarea,
+      .form-group select {
         width: 100%;
         padding: 14px;
         border: 1px solid rgba(42, 92, 126, 0.2);
@@ -719,7 +771,8 @@
       }
 
       .form-group input:focus,
-      .form-group textarea:focus {
+      .form-group textarea:focus,
+      .form-group select:focus {
         outline: none;
         border-color: var(--primary);
         box-shadow: 0 0 0 3px rgba(42, 92, 126, 0.1);
@@ -861,6 +914,12 @@
       }
 
       /* ===== RESPONSIVE ===== */
+      @media (max-width: 1200px) {
+        .container {
+          max-width: 960px;
+        }
+      }
+
       @media (max-width: 992px) {
         .hero-container,
         .about-container,
@@ -894,6 +953,11 @@
         .hero::before {
           width: 60%;
           clip-path: polygon(100% 0, 100% 100%, 0 100%, 40% 0);
+        }
+
+        .partners-grid {
+          grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+          gap: 30px;
         }
       }
 
@@ -952,6 +1016,20 @@
         .section-padding {
           padding: 60px 0;
         }
+
+        .partner-experience {
+          flex-direction: column;
+          gap: 15px;
+        }
+
+        .contact-form {
+          padding: 30px;
+        }
+
+        .partner-avatar {
+          width: 120px;
+          height: 120px;
+        }
       }
 
       @media (max-width: 576px) {
@@ -961,11 +1039,6 @@
 
         .services-grid {
           grid-template-columns: 1fr;
-        }
-
-        .testimonial-card {
-          padding: 30px 20px;
-          margin: 0 10px;
         }
 
         .hero-buttons {
@@ -980,7 +1053,7 @@
         }
 
         .contact-form {
-          padding: 30px 20px;
+          padding: 25px 20px;
         }
 
         .logo-name {
@@ -999,6 +1072,23 @@
         .logo-letter {
           font-size: 0.8rem;
         }
+
+        .partners-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .partner-card {
+          padding: 25px 20px;
+        }
+
+        .partner-avatar {
+          width: 100px;
+          height: 100px;
+        }
+
+        .partner-card h3 {
+          font-size: 1.3rem;
+        }
       }
 
       @media (max-width: 400px) {
@@ -1008,6 +1098,19 @@
 
         .header-container {
           justify-content: space-between;
+        }
+
+        .hero-content h1 {
+          font-size: 1.8rem;
+        }
+
+        .section-title h2 {
+          font-size: 1.8rem;
+        }
+
+        .partner-avatar {
+          width: 90px;
+          height: 90px;
         }
       }
 
@@ -1025,6 +1128,19 @@
 
       .fade-in-up {
         animation: fadeInUp 0.8s ease forwards;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .fade-in {
+        animation: fadeIn 0.8s ease forwards;
       }
 
       /* ===== OVERLAY ===== */
@@ -1073,7 +1189,7 @@
             <a href="#home">Beranda</a>
             <a href="#about">Tentang</a>
             <a href="#layanan">Layanan</a>
-            <a href="#testimoni">Testimoni</a>
+            <a href="#partner">Partner</a>
             <a href="#kontak">Kontak</a>
           </div>
           <a href="https://wa.me/6281991495758" class="btn btn-whatsapp"> <i class="fab fa-whatsapp"></i> Konsultasi </a>
@@ -1245,27 +1361,105 @@
       </div>
     </section>
 
-    <!-- TESTIMONI -->
-    <section class="testimonials section-padding" id="testimoni">
+    <!-- PARTNER KUASA HUKUM (Mengganti Testimoni) -->
+    <section class="partners section-padding" id="partner">
       <div class="container">
         <div class="section-title">
-          <h2>Testimoni Klien</h2>
-          <p>Kepercayaan dan kepuasan klien adalah prioritas utama kami dalam memberikan layanan hukum.</p>
+          <h2>Partner Kuasa Hukum Kami</h2>
+          <p>Berkolaborasi dengan para kuasa hukum profesional yang berpengalaman dalam berbagai bidang hukum untuk memberikan solusi terbaik kepada klien.</p>
         </div>
 
-        <div class="testimonial-slider">
-          <div class="testimonial-card">
-            <div class="testimonial-avatar">
-              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Testimoni Klien" />
+        <div class="partners-grid">
+          <!-- Partner 1 -->
+          <div class="partner-card fade-in">
+            <div class="partner-avatar">
+              <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Dr. H. Rizky Pratama, S.H., M.H." />
             </div>
-            <div class="testimonial-text">"Tim Kantor Hukum Joyo Kusumo sangat profesional dalam menangani kasus sengketa properti keluarga saya. Hasilnya memuaskan dan komunikasi yang transparan selama proses hukum."</div>
-            <div class="testimonial-author">Budi Santoso</div>
-            <div class="testimonial-role">Pengusaha - Tegal</div>
+            <h3>Dr. H. Rizky Pratama, S.H., M.H.</h3>
+            <div class="partner-specialization">Spesialis Hukum Pidana & Bisnis</div>
+            <div class="partner-description">Pengacara berpengalaman lebih dari 15 tahun di bidang hukum pidana dan bisnis. Berpengalaman menangani kasus-kasus korporasi dan kejahatan kerah putih.</div>
+            <div class="partner-experience">
+              <div class="experience-item">
+                <div class="experience-number">15+</div>
+                <div class="experience-label">Tahun Pengalaman</div>
+              </div>
+              <div class="experience-item">
+                <div class="experience-number">500+</div>
+                <div class="experience-label">Kasus Berhasil</div>
+              </div>
+            </div>
+            <div class="partner-contact">
+              <a href="https://wa.me/6281991495758?text=Saya%20ingin%20berkonsultasi%20dengan%20Dr.%20Rizky%20Pratama"> <i class="fab fa-whatsapp"></i> Konsultasi via WhatsApp </a>
+            </div>
           </div>
 
-          <div class="slider-controls">
-            <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
-            <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+          <!-- Partner 2 -->
+          <div class="partner-card fade-in">
+            <div class="partner-avatar">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Diana Sari, S.H., M.Kn." />
+            </div>
+            <h3>Diana Sari, S.H., M.Kn.</h3>
+            <div class="partner-specialization">Spesialis Hukum Keluarga & Perdata</div>
+            <div class="partner-description">Advokat spesialis hukum keluarga dan perdata dengan pendekatan mediasi yang humanis. Berpengalaman dalam penyelesaian sengketa waris, perceraian, dan hak asuh anak.</div>
+            <div class="partner-experience">
+              <div class="experience-item">
+                <div class="experience-number">12+</div>
+                <div class="experience-label">Tahun Pengalaman</div>
+              </div>
+              <div class="experience-item">
+                <div class="experience-number">300+</div>
+                <div class="experience-label">Kasus Selesai</div>
+              </div>
+            </div>
+            <div class="partner-contact">
+              <a href="https://wa.me/6281991495758?text=Saya%20ingin%20berkonsultasi%20dengan%20Ibu%20Diana%20Sari"> <i class="fab fa-whatsapp"></i> Konsultasi via WhatsApp </a>
+            </div>
+          </div>
+
+          <!-- Partner 3 -->
+          <div class="partner-card fade-in">
+            <div class="partner-avatar">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Bambang Wijaya, S.H., LL.M." />
+            </div>
+            <h3>Bambang Wijaya, S.H., LL.M.</h3>
+            <div class="partner-specialization">Spesialis Hukum Perburuhan & Ketenagakerjaan</div>
+            <div class="partner-description">Pakar hukum ketenagakerjaan dengan spesialisasi penyelesaian sengketa perburuhan, PHK, dan hak-hak pekerja. Berpengalaman sebagai konsultan hukum untuk perusahaan-perusahaan besar.</div>
+            <div class="partner-experience">
+              <div class="experience-item">
+                <div class="experience-number">18+</div>
+                <div class="experience-label">Tahun Pengalaman</div>
+              </div>
+              <div class="experience-item">
+                <div class="experience-number">400+</div>
+                <div class="experience-label">Kasus Ditangani</div>
+              </div>
+            </div>
+            <div class="partner-contact">
+              <a href="https://wa.me/6281991495758?text=Saya%20ingin%20berkonsultasi%20dengan%20Bapak%20Bambang%20Wijaya"> <i class="fab fa-whatsapp"></i> Konsultasi via WhatsApp </a>
+            </div>
+          </div>
+
+          <!-- Partner 4 -->
+          <div class="partner-card fade-in">
+            <div class="partner-avatar">
+              <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Maya Dewi, S.H., M.H." />
+            </div>
+            <h3>Maya Dewi, S.H., M.H.</h3>
+            <div class="partner-specialization">Spesialis Hukum Agraria & Properti</div>
+            <div class="partner-description">Ahli hukum properti dan agraria dengan fokus pada sengketa tanah, sertifikat hak milik, dan pengadaan tanah untuk pembangunan. Berpengalaman dalam litigasi dan non-litigasi.</div>
+            <div class="partner-experience">
+              <div class="experience-item">
+                <div class="experience-number">10+</div>
+                <div class="experience-label">Tahun Pengalaman</div>
+              </div>
+              <div class="experience-item">
+                <div class="experience-number">250+</div>
+                <div class="experience-label">Kasus Properti</div>
+              </div>
+            </div>
+            <div class="partner-contact">
+              <a href="https://wa.me/6281991495758?text=Saya%20ingin%20berkonsultasi%20dengan%20Ibu%20Maya%20Dewi"> <i class="fab fa-whatsapp"></i> Konsultasi via WhatsApp </a>
+            </div>
           </div>
         </div>
       </div>
@@ -1335,7 +1529,7 @@
             </div>
             <div class="form-group">
               <label for="service">Jenis Layanan</label>
-              <select id="service" name="service" style="width: 100%; padding: 14px; border: 1px solid rgba(42, 92, 126, 0.2); border-radius: 8px; font-family: &quot;Inter&quot;, sans-serif; font-size: 1rem">
+              <select id="service" name="service">
                 <option value="">Pilih Layanan</option>
                 <option value="pidana">Hukum Pidana</option>
                 <option value="perdata">Hukum Perdata</option>
@@ -1429,53 +1623,6 @@
         link.addEventListener("click", toggleMobileMenu);
       });
 
-      // Testimonial slider (simple version)
-      const testimonialCards = document.querySelectorAll(".testimonial-card");
-      const prevBtn = document.querySelector(".prev-btn");
-      const nextBtn = document.querySelector(".next-btn");
-      let currentIndex = 0;
-
-      function showTestimonial(index) {
-        testimonialCards.forEach((card, i) => {
-          card.style.display = i === index ? "block" : "none";
-        });
-      }
-
-      prevBtn.addEventListener("click", () => {
-        currentIndex = (currentIndex - 1 + testimonialCards.length) % testimonialCards.length;
-        showTestimonial(currentIndex);
-      });
-
-      nextBtn.addEventListener("click", () => {
-        currentIndex = (currentIndex + 1) % testimonialCards.length;
-        showTestimonial(currentIndex);
-      });
-
-      // Initialize testimonial slider
-      showTestimonial(0);
-
-      // Add more testimonial cards (for demo purposes)
-      const testimonialSlider = document.querySelector(".testimonial-slider");
-      const testimonialCard = document.querySelector(".testimonial-card");
-
-      // Clone and modify testimonial cards
-      for (let i = 0; i < 2; i++) {
-        const clone = testimonialCard.cloneNode(true);
-        clone.querySelector(".testimonial-author").textContent = i === 0 ? "Sari Dewi" : "Agus Wijaya";
-        clone.querySelector(".testimonial-role").textContent = i === 0 ? "Ibu Rumah Tangga - Slawi" : "Pengusaha - Tegal Kota";
-        clone.querySelector(".testimonial-text").textContent =
-          i === 0
-            ? "Layanan hukum perdata dari Kantor Hukum Joyo Kusumo sangat membantu saya dalam menyelesaikan sengketa waris keluarga. Prosesnya jelas dan hasilnya memuaskan."
-            : "Kasus pidana yang saya hadapi berakhir dengan baik berkat pendampingan tim Joyo Kusumo. Mereka benar-benar memahami strategi hukum yang tepat.";
-        testimonialSlider.insertBefore(clone, testimonialSlider.querySelector(".slider-controls"));
-      }
-
-      // Re-initialize testimonial cards after adding new ones
-      const allTestimonialCards = document.querySelectorAll(".testimonial-card");
-      allTestimonialCards.forEach((card, i) => {
-        if (i > 0) card.style.display = "none";
-      });
-
       // Scroll animation
       const observerOptions = {
         threshold: 0.1,
@@ -1491,7 +1638,7 @@
       }, observerOptions);
 
       // Observe elements for animation
-      document.querySelectorAll(".service-card, .hero-content, .hero-image, .about-content, .about-image, .contact-info, .contact-form").forEach((el) => {
+      document.querySelectorAll(".service-card, .hero-content, .hero-image, .about-content, .about-image, .contact-info, .contact-form, .partner-card").forEach((el) => {
         observer.observe(el);
       });
 
@@ -1527,7 +1674,7 @@
         // Reset form
         this.reset();
 
-        // Show success message (you can customize this)
+        // Show success message
         alert("Terima kasih! Anda akan diarahkan ke WhatsApp untuk melanjutkan konsultasi.");
       });
     </script>
