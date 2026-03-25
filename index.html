@@ -1,28 +1,41 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kantor Hukum Joyo Kusumo Tegal | Solusi Hukum Profesional</title>
+    <title>Law Firm Asoka Nadia | Solusi Hukum Profesional & Terpercaya</title>
 
     <!-- GOOGLE FONT -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@700;800&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
     <style>
       :root {
-        --primary: #2a5c7e;
-        --secondary: #d4a76a;
-        --accent: #8b4513;
-        --light: #f8fafc;
-        --dark: #1e293b;
+        --primary: #0f172a;
+        --primary-soft: #1e293b;
+        --secondary: #c8a96b;
+        --secondary-soft: #e7d7b4;
+        --accent: #8f6f3e;
+        --light: #f8f7f4;
+        --white: #ffffff;
+        --dark: #0b1120;
         --text: #475569;
+        --text-soft: #64748b;
         --gray: #94a3b8;
-        --success: #10b981;
-        --shadow: 0 10px 30px rgba(42, 92, 126, 0.1);
+        --line: rgba(15, 23, 42, 0.08);
+        --shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+        --shadow-soft: 0 10px 25px rgba(15, 23, 42, 0.06);
         --transition: all 0.3s ease;
-        --gradient: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+        --gradient-gold: linear-gradient(135deg, #b89356 0%, #e2c78c 50%, #9d7638 100%);
+        --gradient-dark: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        --gradient-soft: linear-gradient(135deg, rgba(15, 23, 42, 0.04) 0%, rgba(200, 169, 107, 0.05) 100%);
       }
 
       * {
@@ -39,7 +52,7 @@
         font-family: "Inter", sans-serif;
         background: var(--light);
         color: var(--text);
-        line-height: 1.6;
+        line-height: 1.7;
         overflow-x: hidden;
       }
 
@@ -47,13 +60,18 @@
       h2,
       h3,
       h4 {
-        font-family: "Poppins", sans-serif;
+        font-family: "Cormorant Garamond", serif;
         font-weight: 700;
+        letter-spacing: 0.2px;
       }
 
       a {
         text-decoration: none;
         color: inherit;
+      }
+
+      img {
+        display: block;
       }
 
       .container {
@@ -64,18 +82,18 @@
       }
 
       .section-padding {
-        padding: 80px 0;
+        padding: 90px 0;
       }
 
       .btn {
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        gap: 8px;
+        gap: 10px;
         padding: 14px 28px;
-        border-radius: 8px;
+        border-radius: 12px;
         font-weight: 600;
-        font-size: 16px;
+        font-size: 15px;
         cursor: pointer;
         transition: var(--transition);
         border: none;
@@ -85,19 +103,19 @@
       .btn-primary {
         background: var(--primary);
         color: white;
-        box-shadow: 0 4px 15px rgba(42, 92, 126, 0.3);
+        box-shadow: 0 10px 24px rgba(15, 23, 42, 0.18);
       }
 
       .btn-primary:hover {
-        background: #1f4a65;
+        background: #162033;
         transform: translateY(-3px);
-        box-shadow: 0 8px 20px rgba(42, 92, 126, 0.4);
+        box-shadow: 0 14px 28px rgba(15, 23, 42, 0.24);
       }
 
       .btn-secondary {
-        background: white;
+        background: transparent;
         color: var(--primary);
-        border: 2px solid var(--primary);
+        border: 1px solid rgba(15, 23, 42, 0.12);
       }
 
       .btn-secondary:hover {
@@ -107,32 +125,32 @@
       }
 
       .btn-whatsapp {
-        background: linear-gradient(135deg, #25d366 0%, #1da851 100%);
+        background: #1faa59;
         color: white;
-        border-radius: 8px;
-        padding: 12px 24px;
+        border-radius: 12px;
+        padding: 12px 22px;
         display: inline-flex;
         align-items: center;
         gap: 8px;
         font-weight: 600;
         transition: var(--transition);
-        box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+        box-shadow: 0 8px 18px rgba(31, 170, 89, 0.2);
       }
 
       .btn-whatsapp:hover {
         transform: translateY(-3px);
-        box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+        box-shadow: 0 12px 24px rgba(31, 170, 89, 0.28);
       }
 
       .section-title {
         text-align: center;
-        margin-bottom: 60px;
+        margin-bottom: 58px;
       }
 
       .section-title h2 {
-        font-size: 2.8rem;
+        font-size: 3rem;
         color: var(--primary);
-        margin-bottom: 15px;
+        margin-bottom: 14px;
         position: relative;
         display: inline-block;
       }
@@ -143,16 +161,17 @@
         bottom: -10px;
         left: 50%;
         transform: translateX(-50%);
-        width: 80px;
+        width: 76px;
         height: 3px;
-        background: var(--secondary);
+        border-radius: 999px;
+        background: var(--gradient-gold);
       }
 
       .section-title p {
-        color: var(--gray);
-        max-width: 600px;
+        color: var(--text-soft);
+        max-width: 680px;
         margin: 0 auto;
-        font-size: 1.1rem;
+        font-size: 1.03rem;
       }
 
       /* ===== HEADER ===== */
@@ -162,11 +181,12 @@
         left: 0;
         width: 100%;
         z-index: 1000;
-        background: rgba(255, 255, 255, 0.98);
-        backdrop-filter: blur(10px);
-        box-shadow: 0 5px 20px rgba(42, 92, 126, 0.08);
-        padding: 15px 0;
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(14px);
+        box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+        padding: 14px 0;
         transition: var(--transition);
+        border-bottom: 1px solid rgba(15, 23, 42, 0.05);
       }
 
       .header-container {
@@ -178,40 +198,53 @@
       .logo {
         display: flex;
         align-items: center;
-        gap: 15px;
+        gap: 14px;
       }
 
-      .logo-icon {
-        position: relative;
-        width: 55px;
-        height: 55px;
-        background: var(--primary);
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        font-weight: 800;
-        font-size: 1rem;
-        box-shadow: 0 4px 12px rgba(42, 92, 126, 0.2);
-        overflow: hidden;
-      }
+.logo-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.15);
+}
+
+.logo-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* biar logo tidak kepotong */
+  padding: 6px; /* biar ada nafas */
+}
 
       .logo-icon::before {
         content: "";
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+        inset: 0;
+        background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.12) 0%,
+          rgba(255, 255, 255, 0) 100%
+        );
+      }
+
+      .logo-icon::after {
+        content: "";
+        position: absolute;
+        inset: 1px;
+        border: 1px solid rgba(200, 169, 107, 0.35);
+        border-radius: 13px;
       }
 
       .logo-letter {
         line-height: 1;
         font-weight: 700;
-        font-size: 0.9rem;
+        font-size: 0.82rem;
+        position: relative;
+        z-index: 1;
       }
 
       .logo-text {
@@ -220,36 +253,39 @@
       }
 
       .logo-name {
-        font-family: "Poppins", sans-serif;
-        font-size: 1.5rem;
-        font-weight: 800;
+        font-family: "Cormorant Garamond", serif;
+        font-size: 1.8rem;
+        font-weight: 700;
         color: var(--primary);
         line-height: 1;
+        letter-spacing: 1px;
       }
 
       .logo-tagline {
-        font-size: 0.85rem;
+        font-size: 0.82rem;
         color: var(--accent);
-        margin-top: 3px;
-        font-weight: 500;
+        margin-top: 4px;
+        font-weight: 600;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
       }
 
       nav {
         display: flex;
         align-items: center;
-        gap: 30px;
+        gap: 28px;
       }
 
       .nav-links {
         display: flex;
-        gap: 30px;
+        gap: 28px;
       }
 
       .nav-links a {
         font-weight: 500;
         position: relative;
         padding: 5px 0;
-        color: var(--dark);
+        color: var(--primary-soft);
       }
 
       .nav-links a::after {
@@ -259,6 +295,7 @@
         left: 0;
         width: 0;
         height: 2px;
+        border-radius: 999px;
         background: var(--secondary);
         transition: width 0.3s ease;
       }
@@ -279,9 +316,12 @@
 
       /* ===== HERO ===== */
       .hero {
-        padding-top: 140px;
-        padding-bottom: 80px;
-        background: linear-gradient(135deg, rgba(42, 92, 126, 0.05) 0%, rgba(212, 167, 106, 0.05) 100%);
+        padding-top: 155px;
+        padding-bottom: 90px;
+        background:
+          radial-gradient(circle at top left, rgba(200, 169, 107, 0.08), transparent 30%),
+          radial-gradient(circle at top right, rgba(15, 23, 42, 0.06), transparent 32%),
+          linear-gradient(180deg, #fcfbf8 0%, #f8f7f4 100%);
         position: relative;
         overflow: hidden;
       }
@@ -290,26 +330,26 @@
         content: "";
         position: absolute;
         top: 0;
-        right: 0;
+        right: -10%;
         width: 40%;
         height: 100%;
-        background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-        opacity: 0.05;
-        clip-path: polygon(100% 0, 100% 100%, 0 100%, 25% 0);
+        background: linear-gradient(180deg, rgba(200, 169, 107, 0.08), rgba(15, 23, 42, 0.03));
+        filter: blur(30px);
+        opacity: 0.8;
       }
 
       .hero-container {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 50px;
+        grid-template-columns: 1.05fr 0.95fr;
+        gap: 56px;
         align-items: center;
         position: relative;
       }
 
       .hero-content h1 {
-        font-size: 3.2rem;
-        line-height: 1.2;
-        margin-bottom: 20px;
+        font-size: 4rem;
+        line-height: 1.05;
+        margin-bottom: 22px;
         color: var(--primary);
       }
 
@@ -317,11 +357,26 @@
         color: var(--accent);
       }
 
+      .hero-subtitle {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 8px 14px;
+        border-radius: 999px;
+        background: rgba(200, 169, 107, 0.1);
+        color: var(--accent);
+        font-size: 0.9rem;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        margin-bottom: 18px;
+      }
+
       .hero-content p {
-        font-size: 1.1rem;
-        margin-bottom: 30px;
+        font-size: 1.06rem;
+        margin-bottom: 32px;
         color: var(--text);
-        line-height: 1.8;
+        line-height: 1.9;
+        max-width: 620px;
       }
 
       .hero-buttons {
@@ -334,12 +389,24 @@
         position: relative;
       }
 
+      .hero-image::before {
+        content: "";
+        position: absolute;
+        inset: auto auto -18px -18px;
+        width: 150px;
+        height: 150px;
+        background: radial-gradient(circle, rgba(200, 169, 107, 0.2), transparent 70%);
+        z-index: 0;
+      }
+
       .hero-image img {
         width: 100%;
-        border-radius: 15px;
-        box-shadow: 0 20px 40px rgba(42, 92, 126, 0.15);
+        border-radius: 24px;
+        box-shadow: 0 25px 50px rgba(15, 23, 42, 0.12);
         transition: var(--transition);
-        border: 5px solid white;
+        border: 1px solid rgba(255, 255, 255, 0.9);
+        position: relative;
+        z-index: 1;
       }
 
       /* ===== ABOUT ===== */
@@ -350,20 +417,20 @@
       .about-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 60px;
+        gap: 64px;
         align-items: center;
       }
 
       .about-content h2 {
-        font-size: 2.5rem;
+        font-size: 3rem;
         color: var(--primary);
-        margin-bottom: 20px;
+        margin-bottom: 18px;
       }
 
       .about-content p {
-        margin-bottom: 25px;
-        font-size: 1.1rem;
-        line-height: 1.8;
+        margin-bottom: 22px;
+        font-size: 1.05rem;
+        line-height: 1.85;
       }
 
       .about-features {
@@ -376,72 +443,77 @@
       .feature-item {
         display: flex;
         align-items: flex-start;
-        gap: 15px;
+        gap: 14px;
+        padding: 18px;
+        border-radius: 16px;
+        background: #fbfbfa;
+        border: 1px solid rgba(15, 23, 42, 0.05);
       }
 
       .feature-icon {
-        width: 50px;
-        height: 50px;
-        background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-        border-radius: 10px;
+        width: 48px;
+        height: 48px;
+        background: var(--gradient-dark);
+        border-radius: 12px;
         display: flex;
         align-items: center;
         justify-content: center;
-        color: white;
-        font-size: 1.2rem;
+        color: var(--secondary);
+        font-size: 1.05rem;
         flex-shrink: 0;
+        box-shadow: 0 10px 20px rgba(15, 23, 42, 0.12);
       }
 
       .feature-text h4 {
         color: var(--primary);
-        margin-bottom: 5px;
-        font-size: 1.1rem;
+        margin-bottom: 4px;
+        font-size: 1.2rem;
       }
 
       .feature-text p {
-        font-size: 0.95rem;
-        color: var(--gray);
+        font-size: 0.94rem;
+        color: var(--text-soft);
         margin: 0;
         line-height: 1.6;
       }
 
       .about-image img {
         width: 100%;
-        border-radius: 15px;
-        box-shadow: 0 20px 40px rgba(42, 92, 126, 0.15);
+        border-radius: 24px;
+        box-shadow: 0 22px 50px rgba(15, 23, 42, 0.12);
       }
 
       /* ===== SERVICES ===== */
       .services {
-        background: linear-gradient(135deg, rgba(42, 92, 126, 0.03) 0%, rgba(212, 167, 106, 0.03) 100%);
+        background: var(--gradient-soft);
       }
 
       .services-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
         gap: 30px;
       }
 
       .service-card {
         background: white;
-        border-radius: 15px;
+        border-radius: 22px;
         overflow: hidden;
-        box-shadow: var(--shadow);
+        box-shadow: var(--shadow-soft);
         transition: var(--transition);
         position: relative;
         height: 100%;
         display: flex;
         flex-direction: column;
-        border: 1px solid rgba(42, 92, 126, 0.1);
+        border: 1px solid rgba(15, 23, 42, 0.06);
       }
 
       .service-card:hover {
         transform: translateY(-10px);
-        box-shadow: 0 25px 50px rgba(42, 92, 126, 0.15);
+        box-shadow: 0 28px 50px rgba(15, 23, 42, 0.12);
       }
 
       .service-card-header {
-        height: 180px;
+        height: 190px;
         position: relative;
         overflow: hidden;
       }
@@ -454,41 +526,42 @@
       }
 
       .service-card:hover .service-card-header img {
-        transform: scale(1.05);
+        transform: scale(1.06);
       }
 
       .service-card-overlay {
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(to bottom, rgba(42, 92, 126, 0.8), rgba(139, 69, 19, 0.8));
+        inset: 0;
+        background: linear-gradient(
+          to bottom,
+          rgba(15, 23, 42, 0.35),
+          rgba(15, 23, 42, 0.78)
+        );
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: end;
         color: white;
         flex-direction: column;
-        padding: 20px;
+        padding: 22px;
         text-align: center;
       }
 
       .service-icon {
-        font-size: 2.5rem;
-        margin-bottom: 15px;
-        color: var(--secondary);
+        font-size: 2.2rem;
+        margin-bottom: 10px;
+        color: var(--secondary-soft);
       }
 
       .service-card-body {
-        padding: 25px;
+        padding: 26px;
         flex-grow: 1;
         display: flex;
         flex-direction: column;
       }
 
       .service-card-body h3 {
-        font-size: 1.4rem;
-        margin-bottom: 15px;
+        font-size: 1.7rem;
+        margin-bottom: 12px;
         color: var(--primary);
       }
 
@@ -496,293 +569,257 @@
         color: var(--text);
         margin-bottom: 20px;
         flex-grow: 1;
-        line-height: 1.7;
+        line-height: 1.8;
       }
 
       .service-features {
         list-style: none;
-        margin-bottom: 25px;
+        margin-bottom: 24px;
       }
 
       .service-features li {
-        padding: 8px 0;
-        border-bottom: 1px solid rgba(42, 92, 126, 0.1);
+        padding: 9px 0;
+        border-bottom: 1px solid rgba(15, 23, 42, 0.06);
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         gap: 10px;
       }
 
       .service-features li i {
         color: var(--secondary);
         font-size: 0.9rem;
-      }
-
-      .service-price {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: auto;
-      }
-
-      .price-tag {
-        font-size: 1.6rem;
-        font-weight: 700;
-        color: var(--primary);
-      }
-
-      .price-tag span {
-        font-size: 1rem;
-        color: var(--gray);
-        font-weight: 400;
-      }
-
-      /* ===== PARTNER SECTION (Mengganti Testimoni) ===== */
-      .partners {
-        background: white;
-      }
-
-      .partners-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-        gap: 40px;
-        margin-top: 40px;
-      }
-
-      .partner-card {
-        background: white;
-        border-radius: 15px;
-        padding: 30px;
-        text-align: center;
-        box-shadow: var(--shadow);
-        transition: var(--transition);
-        border: 1px solid rgba(42, 92, 126, 0.1);
-        position: relative;
-        overflow: hidden;
-      }
-
-      .partner-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 20px 40px rgba(42, 92, 126, 0.15);
-      }
-
-      .partner-card::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 5px;
-        background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
-      }
-
-      .partner-avatar {
-        width: 140px;
-        height: 140px;
-        margin: 0 auto 25px;
-        border-radius: 50%;
-        overflow: hidden;
-        border: 4px solid var(--secondary);
-        box-shadow: 0 8px 20px rgba(212, 167, 106, 0.3);
-        position: relative;
-      }
-
-      .partner-avatar img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: var(--transition);
-      }
-
-      .partner-card:hover .partner-avatar img {
-        transform: scale(1.05);
-      }
-
-      .partner-card h3 {
-        font-size: 1.5rem;
-        color: var(--primary);
-        margin-bottom: 8px;
-      }
-
-      .partner-specialization {
-        color: var(--accent);
-        font-weight: 600;
-        margin-bottom: 15px;
-        font-size: 1rem;
-        display: inline-block;
-        padding: 6px 18px;
-        background: rgba(139, 69, 19, 0.1);
-        border-radius: 20px;
-      }
-
-      .partner-description {
-        color: var(--text);
-        line-height: 1.7;
-        margin-bottom: 25px;
-        font-size: 1rem;
-      }
-
-      .partner-experience {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 25px;
-        margin-top: 25px;
-        padding-top: 25px;
-        border-top: 1px solid rgba(42, 92, 126, 0.1);
-      }
-
-      .experience-item {
-        text-align: center;
-      }
-
-      .experience-number {
-        font-size: 1.8rem;
-        font-weight: 700;
-        color: var(--primary);
-        line-height: 1;
-      }
-
-      .experience-label {
-        font-size: 0.85rem;
-        color: var(--gray);
         margin-top: 5px;
       }
 
-      .partner-contact {
-        margin-top: 20px;
-        padding-top: 20px;
-        border-top: 1px solid rgba(42, 92, 126, 0.1);
-      }
-
-      .partner-contact a {
-        display: inline-flex;
-        align-items: center;
+      .service-contact-btn {
+        margin-top: auto;
+        display: flex;
         justify-content: center;
-        gap: 8px;
-        padding: 10px 20px;
-        background: var(--primary);
-        color: white;
-        border-radius: 8px;
-        font-weight: 500;
-        transition: var(--transition);
       }
 
-      .partner-contact a:hover {
-        background: #1f4a65;
-        transform: translateY(-3px);
-      }
+      /* ===== PARTNER SECTION ===== */
+  .partners {
+  background: white;
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+  margin-top: 42px;
+}
+
+.partner-card {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  min-height: 360px;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  background: #111827;
+}
+
+.partner-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 28px 50px rgba(15, 23, 42, 0.16);
+}
+
+.partner-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.partner-card:hover img {
+  transform: scale(1.04);
+}
+
+.partner-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(15, 23, 42, 0.95) 0%,
+    rgba(15, 23, 42, 0.72) 28%,
+    rgba(15, 23, 42, 0.18) 55%,
+    rgba(15, 23, 42, 0.04) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 22px 18px 18px;
+}
+
+.partner-name {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  line-height: 1.45;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.partner-role {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  color: #f5e7c6;
+  background: rgba(200, 169, 107, 0.14);
+  border: 1px solid rgba(231, 215, 180, 0.18);
+  backdrop-filter: blur(8px);
+}
+
+@media (max-width: 992px) {
+  .partners-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .partners-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .partner-card {
+    min-height: 420px;
+  }
+}
 
       /* ===== CONTACT ===== */
       .contact {
-        background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+        background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
         color: white;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .contact::before {
+        content: "";
+        position: absolute;
+        top: -100px;
+        right: -100px;
+        width: 260px;
+        height: 260px;
+        background: radial-gradient(circle, rgba(200, 169, 107, 0.18), transparent 70%);
       }
 
       .contact-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 60px;
+        position: relative;
       }
 
       .contact-info h2 {
-        font-size: 2.5rem;
-        margin-bottom: 20px;
+        font-size: 3rem;
+        margin-bottom: 18px;
         color: white;
       }
 
       .contact-info p {
         margin-bottom: 30px;
-        font-size: 1.1rem;
-        line-height: 1.8;
+        font-size: 1.04rem;
+        line-height: 1.85;
         opacity: 0.9;
       }
 
       .contact-details {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 18px;
       }
 
       .contact-item {
         display: flex;
         align-items: flex-start;
-        gap: 15px;
+        gap: 14px;
+        padding: 18px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.03);
       }
 
       .contact-icon {
-        width: 50px;
-        height: 50px;
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 10px;
+        width: 48px;
+        height: 48px;
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 12px;
         display: flex;
         align-items: center;
         justify-content: center;
         color: var(--secondary);
-        font-size: 1.2rem;
+        font-size: 1.08rem;
         flex-shrink: 0;
         backdrop-filter: blur(5px);
       }
 
       .contact-text h4 {
-        margin-bottom: 5px;
+        margin-bottom: 4px;
         font-size: 1.1rem;
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
       }
 
       .contact-text p {
         margin: 0;
-        opacity: 0.8;
-        font-size: 1rem;
+        opacity: 0.82;
+        font-size: 0.98rem;
       }
 
       .contact-form {
         background: white;
-        padding: 40px;
-        border-radius: 15px;
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        padding: 36px;
+        border-radius: 24px;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
       }
 
       .contact-form h3 {
         color: var(--primary);
-        margin-bottom: 25px;
-        font-size: 1.8rem;
+        margin-bottom: 24px;
+        font-size: 2rem;
       }
 
       .form-group {
-        margin-bottom: 20px;
+        margin-bottom: 18px;
       }
 
       .form-group label {
         display: block;
         margin-bottom: 8px;
         color: var(--primary);
-        font-weight: 500;
+        font-weight: 600;
       }
 
       .form-group input,
       .form-group textarea,
       .form-group select {
         width: 100%;
-        padding: 14px;
-        border: 1px solid rgba(42, 92, 126, 0.2);
-        border-radius: 8px;
+        padding: 14px 15px;
+        border: 1px solid rgba(15, 23, 42, 0.12);
+        border-radius: 12px;
         font-family: "Inter", sans-serif;
         font-size: 1rem;
         transition: var(--transition);
+        background: #fff;
       }
 
       .form-group input:focus,
       .form-group textarea:focus,
       .form-group select:focus {
         outline: none;
-        border-color: var(--primary);
-        box-shadow: 0 0 0 3px rgba(42, 92, 126, 0.1);
+        border-color: var(--secondary);
+        box-shadow: 0 0 0 4px rgba(200, 169, 107, 0.12);
       }
 
       /* ===== FOOTER ===== */
       footer {
-        background: var(--dark);
+        background: #0b1120;
         color: white;
-        padding: 50px 0 20px;
+        padding: 60px 0 20px;
       }
 
       .footer-container {
@@ -793,36 +830,42 @@
       }
 
       .footer-logo {
-        font-family: "Poppins", sans-serif;
-        font-size: 1.8rem;
-        margin-bottom: 15px;
+        font-family: "Cormorant Garamond", serif;
+        font-size: 2rem;
+        margin-bottom: 14px;
         color: white;
-        font-weight: 800;
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: 1px;
       }
 
       .footer-logo span {
         color: var(--secondary);
+        font-size: 1.2rem;
+        font-family: "Inter", sans-serif;
+        letter-spacing: 2px;
+        text-transform: uppercase;
       }
 
       .footer-about p {
-        color: rgba(255, 255, 255, 0.7);
+        color: rgba(255, 255, 255, 0.72);
         margin-bottom: 20px;
         line-height: 1.8;
       }
 
       .social-links {
         display: flex;
-        gap: 15px;
+        gap: 12px;
       }
 
       .social-links a {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 40px;
-        height: 40px;
-        border-radius: 8px;
-        background: rgba(255, 255, 255, 0.1);
+        width: 42px;
+        height: 42px;
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.08);
         color: white;
         transition: var(--transition);
       }
@@ -830,23 +873,25 @@
       .social-links a:hover {
         background: var(--secondary);
         color: var(--dark);
-        transform: translateY(-5px);
+        transform: translateY(-4px);
       }
 
-      .footer-links h3 {
-        font-size: 1.3rem;
-        margin-bottom: 20px;
+      .footer-links h3,
+      .footer-contact h3 {
+        font-size: 1.6rem;
+        margin-bottom: 18px;
         position: relative;
         padding-bottom: 10px;
         color: white;
       }
 
-      .footer-links h3::after {
+      .footer-links h3::after,
+      .footer-contact h3::after {
         content: "";
         position: absolute;
         bottom: 0;
         left: 0;
-        width: 50px;
+        width: 46px;
         height: 2px;
         background: var(--secondary);
       }
@@ -860,7 +905,7 @@
       }
 
       .footer-links a {
-        color: rgba(255, 255, 255, 0.7);
+        color: rgba(255, 255, 255, 0.72);
         transition: var(--transition);
         display: flex;
         align-items: center;
@@ -872,51 +917,33 @@
         transform: translateX(5px);
       }
 
-      .footer-contact h3 {
-        font-size: 1.3rem;
-        margin-bottom: 20px;
-        position: relative;
-        padding-bottom: 10px;
-        color: white;
-      }
-
-      .footer-contact h3::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 50px;
-        height: 2px;
-        background: var(--secondary);
-      }
-
       .footer-contact p {
-        color: rgba(255, 255, 255, 0.7);
-        margin-bottom: 15px;
+        color: rgba(255, 255, 255, 0.72);
+        margin-bottom: 14px;
         display: flex;
         align-items: flex-start;
         gap: 10px;
-        line-height: 1.6;
+        line-height: 1.7;
       }
 
       .footer-contact i {
         color: var(--secondary);
-        width: 20px;
-        margin-top: 3px;
+        width: 18px;
+        margin-top: 5px;
       }
 
       .footer-bottom {
         text-align: center;
-        padding-top: 30px;
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding-top: 26px;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
         color: rgba(255, 255, 255, 0.5);
-        font-size: 0.9rem;
+        font-size: 0.92rem;
       }
 
       /* ===== RESPONSIVE ===== */
       @media (max-width: 1200px) {
         .container {
-          max-width: 960px;
+          max-width: 980px;
         }
       }
 
@@ -933,12 +960,17 @@
           order: 2;
         }
 
+        .hero-content p {
+          margin-left: auto;
+          margin-right: auto;
+        }
+
         .hero-image {
           order: 1;
         }
 
         .hero-image img {
-          max-width: 500px;
+          max-width: 560px;
           margin: 0 auto;
         }
 
@@ -950,20 +982,18 @@
           grid-template-columns: 1fr;
         }
 
-        .hero::before {
-          width: 60%;
-          clip-path: polygon(100% 0, 100% 100%, 0 100%, 40% 0);
-        }
-
         .partners-grid {
-          grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-          gap: 30px;
+          grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
         }
       }
 
       @media (max-width: 768px) {
         .mobile-menu-btn {
           display: block;
+        }
+
+        nav .btn-whatsapp {
+          display: none;
         }
 
         .nav-links {
@@ -975,7 +1005,7 @@
           background: white;
           flex-direction: column;
           padding: 100px 30px 30px;
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 30px rgba(0, 0, 0, 0.12);
           transition: left 0.3s ease;
           z-index: 999;
           overflow-y: auto;
@@ -986,9 +1016,9 @@
         }
 
         .nav-links a {
-          font-size: 1.1rem;
+          font-size: 1.05rem;
           padding: 12px 0;
-          border-bottom: 1px solid rgba(42, 92, 126, 0.1);
+          border-bottom: 1px solid rgba(15, 23, 42, 0.08);
           width: 100%;
         }
 
@@ -997,16 +1027,13 @@
         }
 
         .hero-content h1 {
-          font-size: 2.5rem;
+          font-size: 3rem;
         }
 
-        .section-title h2 {
-          font-size: 2.2rem;
-        }
-
+        .section-title h2,
         .about-content h2,
         .contact-info h2 {
-          font-size: 2rem;
+          font-size: 2.4rem;
         }
 
         .hero-buttons {
@@ -1014,30 +1041,21 @@
         }
 
         .section-padding {
-          padding: 60px 0;
-        }
-
-        .partner-experience {
-          flex-direction: column;
-          gap: 15px;
+          padding: 70px 0;
         }
 
         .contact-form {
-          padding: 30px;
-        }
-
-        .partner-avatar {
-          width: 120px;
-          height: 120px;
+          padding: 28px;
         }
       }
 
       @media (max-width: 576px) {
         .hero-content h1 {
-          font-size: 2rem;
+          font-size: 2.4rem;
         }
 
-        .services-grid {
+        .services-grid,
+        .partners-grid {
           grid-template-columns: 1fr;
         }
 
@@ -1048,46 +1066,33 @@
 
         .hero-buttons .btn {
           width: 100%;
-          max-width: 250px;
+          max-width: 280px;
           justify-content: center;
         }
 
         .contact-form {
-          padding: 25px 20px;
+          padding: 24px 20px;
         }
 
         .logo-name {
-          font-size: 1.3rem;
+          font-size: 1.5rem;
         }
 
         .logo-tagline {
-          font-size: 0.8rem;
+          font-size: 0.76rem;
         }
 
         .logo-icon {
-          width: 45px;
-          height: 45px;
+          width: 46px;
+          height: 46px;
         }
 
         .logo-letter {
-          font-size: 0.8rem;
-        }
-
-        .partners-grid {
-          grid-template-columns: 1fr;
+          font-size: 0.76rem;
         }
 
         .partner-card {
-          padding: 25px 20px;
-        }
-
-        .partner-avatar {
-          width: 100px;
-          height: 100px;
-        }
-
-        .partner-card h3 {
-          font-size: 1.3rem;
+          min-height: 420px;
         }
       }
 
@@ -1101,16 +1106,11 @@
         }
 
         .hero-content h1 {
-          font-size: 1.8rem;
+          font-size: 2.1rem;
         }
 
         .section-title h2 {
-          font-size: 1.8rem;
-        }
-
-        .partner-avatar {
-          width: 90px;
-          height: 90px;
+          font-size: 2rem;
         }
       }
 
@@ -1118,7 +1118,7 @@
       @keyframes fadeInUp {
         from {
           opacity: 0;
-          transform: translateY(30px);
+          transform: translateY(28px);
         }
         to {
           opacity: 1;
@@ -1150,7 +1150,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.5);
+        background: rgba(2, 6, 23, 0.45);
         z-index: 998;
         opacity: 0;
         visibility: hidden;
@@ -1167,16 +1167,13 @@
     <!-- HEADER -->
     <header>
       <div class="container header-container">
-        <a href="#" class="logo">
-          <div class="logo-icon">
-            <div class="logo-letter">R</div>
-            <div class="logo-letter">A</div>
-            <div class="logo-letter">V</div>
-            <div class="logo-letter">H</div>
-          </div>
+      <a href="#" class="logo">
+        <div class="logo-icon">
+          <img src="assets/images/icon.png" alt="Logo Asoka Nadia" />
+        </div>
           <div class="logo-text">
-            <div class="logo-name">JOYO KUSUMO</div>
-            <div class="logo-tagline">Kantor Hukum Tegal</div>
+            <div class="logo-name">ASOKA NADIA</div>
+            <div class="logo-tagline">Law Firm | Konsultan Hukum</div>
           </div>
         </a>
 
@@ -1192,7 +1189,9 @@
             <a href="#partner">Partner</a>
             <a href="#kontak">Kontak</a>
           </div>
-          <a href="https://wa.me/6281991495758" class="btn btn-whatsapp"> <i class="fab fa-whatsapp"></i> Konsultasi </a>
+          <a href="https://wa.me/6281991405758" class="btn btn-whatsapp">
+            <i class="fab fa-whatsapp"></i> Konsultasi
+          </a>
         </nav>
       </div>
       <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
@@ -1202,15 +1201,30 @@
     <section class="hero" id="home">
       <div class="container hero-container">
         <div class="hero-content fade-in-up">
-          <h1>Joyo Kusumo<br /><span>Kantor Hukum Tegal</span></h1>
-          <p>Kantor Hukum Joyo Kusumo Tegal memberikan solusi hukum komprehensif dengan integritas, profesionalisme, dan komitmen untuk mencapai keadilan bagi klien di wilayah Tegal dan sekitarnya.</p>
+          <div class="hero-subtitle">
+            <i class="fas fa-scale-balanced"></i>
+            Solusi Hukum Profesional & Terpercaya
+          </div>
+          <h1>Asoka Nadia<br /><span>Law Firm</span></h1>
+          <p>
+            Law Firm Asoka Nadia memberikan solusi hukum komprehensif dengan
+            integritas, profesionalisme, dan komitmen untuk mencapai keadilan
+            bagi klien di wilayah Tegal, Slawi, dan sekitarnya.
+          </p>
           <div class="hero-buttons">
-            <a href="#layanan" class="btn btn-primary"> <i class="fas fa-gavel"></i> Lihat Layanan </a>
-            <a href="tel:081991495758" class="btn btn-secondary"> <i class="fas fa-phone"></i> Telepon Sekarang </a>
+            <a href="#layanan" class="btn btn-primary">
+              <i class="fas fa-gavel"></i> Lihat Layanan
+            </a>
+            <a href="tel:081991405758" class="btn btn-secondary">
+              <i class="fas fa-phone"></i> Telepon Sekarang
+            </a>
           </div>
         </div>
         <div class="hero-image fade-in-up">
-          <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Kantor Hukum Joyo Kusumo Tegal" />
+          <img
+            src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
+            alt="Law Firm Asoka Nadia"
+          />
         </div>
       </div>
     </section>
@@ -1219,12 +1233,24 @@
     <section class="about section-padding" id="about">
       <div class="container about-container">
         <div class="about-image fade-in-up">
-          <img src="https://images.unsplash.com/photo-1589391886085-8b6b0ac72a1a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Tentang Kantor Hukum Joyo Kusumo" />
+          <img
+            src="assets/images/about.png"
+            alt="Tentang Law Firm Asoka Nadia"
+          />
         </div>
         <div class="about-content fade-in-up">
           <h2>Tentang Kami</h2>
-          <p>Kantor Hukum Joyo Kusumo Tegal telah berdedikasi memberikan layanan hukum yang terpercaya dan profesional kepada masyarakat Tegal dan sekitarnya sejak tahun 2010.</p>
-          <p>Dengan tim pengacara berpengalaman dan berkompeten di bidangnya, kami siap membantu menyelesaikan berbagai permasalahan hukum dengan pendekatan yang strategis dan solutif.</p>
+          <p>
+            Law Firm Asoka Nadia telah berdedikasi memberikan layanan hukum yang
+            terpercaya dan profesional kepada masyarakat Tegal, Slawi, dan
+            sekitarnya dengan pendekatan yang humanis dan solutif.
+          </p>
+          <p>
+            Dengan tim pengacara berpengalaman dan berkompeten di bidangnya,
+            kami siap membantu menyelesaikan berbagai permasalahan hukum, mulai
+            dari perkara perdata agama, perbankan, hingga kepailitan dengan
+            menjaga marwah profesi advokat.
+          </p>
 
           <div class="about-features">
             <div class="feature-item">
@@ -1233,9 +1259,12 @@
               </div>
               <div class="feature-text">
                 <h4>Integritas Tinggi</h4>
-                <p>Menjunjung tinggi etika dan profesionalisme dalam setiap kasus</p>
+                <p>
+                  Menjunjung tinggi etika dan profesionalisme dalam setiap kasus
+                </p>
               </div>
             </div>
+
             <div class="feature-item">
               <div class="feature-icon">
                 <i class="fas fa-shield-alt"></i>
@@ -1245,6 +1274,7 @@
                 <p>Melindungi hak dan kepentingan klien dengan maksimal</p>
               </div>
             </div>
+
             <div class="feature-item">
               <div class="feature-icon">
                 <i class="fas fa-handshake"></i>
@@ -1254,6 +1284,7 @@
                 <p>Memberikan solusi hukum yang efektif dan efisien</p>
               </div>
             </div>
+
             <div class="feature-item">
               <div class="feature-icon">
                 <i class="fas fa-clock"></i>
@@ -1273,87 +1304,146 @@
       <div class="container">
         <div class="section-title">
           <h2>Layanan Kami</h2>
-          <p>Kami menyediakan solusi hukum komprehensif untuk berbagai kebutuhan dengan biaya transparan dan pelayanan profesional.</p>
+          <p>
+            Kami menyediakan solusi hukum komprehensif untuk berbagai kebutuhan
+            dengan pendekatan profesional dan terpercaya.
+          </p>
         </div>
 
         <div class="services-grid">
-          <!-- Layanan 1 -->
+          <!-- Layanan Perdata Agama -->
           <div class="service-card fade-in-up">
             <div class="service-card-header">
-              <img src="https://images.unsplash.com/photo-1589391886085-8b6b0ac72a1a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Hukum Pidana" />
+              <img
+                src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
+                alt="Hukum Perdata Agama"
+              />
               <div class="service-card-overlay">
-                <div class="service-icon"><i class="fas fa-balance-scale"></i></div>
-                <h3 style="color: white; font-size: 1.3rem">Hukum Pidana</h3>
+                <div class="service-icon">
+                  <i class="fas fa-hand-holding-heart"></i>
+                </div>
+                <h3 style="color: white; font-size: 1.4rem">Perdata Agama</h3>
               </div>
             </div>
             <div class="service-card-body">
-              <h3>Hukum Pidana</h3>
-              <p>Pendampingan hukum untuk berbagai kasus pidana mulai dari penyelidikan hingga persidangan dengan strategi pembelaan yang tepat.</p>
-
+              <h3>Perkara Perdata Agama</h3>
+              <p>
+                Pendampingan hukum untuk berbagai perkara di Pengadilan Agama
+                dengan solusi yang bijaksana dan berpihak pada keadilan
+                keluarga.
+              </p>
               <ul class="service-features">
-                <li><i class="fas fa-check-circle"></i> Konsultasi hukum awal</li>
-                <li><i class="fas fa-check-circle"></i> Penyelidikan & penyidikan</li>
-                <li><i class="fas fa-check-circle"></i> Strategi pembelaan terpadu</li>
-                <li><i class="fas fa-check-circle"></i> Pendampingan di pengadilan</li>
+                <li><i class="fas fa-check-circle"></i> Cerai Gugat & Cerai Talak</li>
+                <li><i class="fas fa-check-circle"></i> Poligami & Isbath Nikah</li>
+                <li><i class="fas fa-check-circle"></i> Dispensasi Kawin & Gono Gini</li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Waris, Asal Usul Anak &
+                  Pengangkatan Anak
+                </li>
               </ul>
-
-              <div class="service-price">
-                <div class="price-tag">Rp 5.000.000<span> / paket</span></div>
-                <a href="https://wa.me/6281991495758?text=Saya%20ingin%20konsultasi%20tentang%20hukum%20pidana" class="btn-whatsapp"> <i class="fab fa-whatsapp"></i> Konsultasi </a>
+              <div class="service-contact-btn">
+                <a
+                  href="https://wa.me/6281991405758?text=Saya%20ingin%20konsultasi%20tentang%20Perkara%20Perdata%20Agama"
+                  class="btn-whatsapp"
+                  style="width: 100%; justify-content: center"
+                >
+                  <i class="fab fa-whatsapp"></i> Konsultasi
+                </a>
               </div>
             </div>
           </div>
 
-          <!-- Layanan 2 -->
+          <!-- Layanan Perbankan -->
           <div class="service-card fade-in-up">
             <div class="service-card-header">
-              <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1611&q=80" alt="Hukum Perdata" />
+              <img
+                src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1611&q=80"
+                alt="Hukum Perbankan"
+              />
               <div class="service-card-overlay">
-                <div class="service-icon"><i class="fas fa-file-contract"></i></div>
-                <h3 style="color: white; font-size: 1.3rem">Hukum Perdata</h3>
+                <div class="service-icon"><i class="fas fa-university"></i></div>
+                <h3 style="color: white; font-size: 1.4rem">Perbankan & Kredit</h3>
               </div>
             </div>
             <div class="service-card-body">
-              <h3>Hukum Perdata</h3>
-              <p>Menangani sengketa perdata termasuk hutang piutang, waris, perjanjian, dan properti dengan strategi mediasi dan litigasi.</p>
-
+              <h3>Perkara Perbankan</h3>
+              <p>
+                Penanganan sengketa perbankan secara komprehensif, baik untuk
+                debitur maupun kreditur, dengan pendekatan litigasi dan
+                negosiasi.
+              </p>
               <ul class="service-features">
-                <li><i class="fas fa-check-circle"></i> Analisis kasus dan legal opinion</li>
-                <li><i class="fas fa-check-circle"></i> Penyusunan gugatan dan jawaban</li>
-                <li><i class="fas fa-check-circle"></i> Mediasi dan negosiasi</li>
-                <li><i class="fas fa-check-circle"></i> Eksekusi putusan pengadilan</li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Wanprestasi debitur
+                  (kredit macet)
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Sengketa bunga, denda,
+                  atau penalti
+                </li>
+                <li><i class="fas fa-check-circle"></i> Restrukturisasi kredit</li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Eksekusi jaminan
+                  (fidusia, hak tanggungan)
+                </li>
               </ul>
-
-              <div class="service-price">
-                <div class="price-tag">Rp 4.000.000<span> / paket</span></div>
-                <a href="https://wa.me/6281991495758?text=Saya%20ingin%20konsultasi%20tentang%20hukum%20perdata" class="btn-whatsapp"> <i class="fab fa-whatsapp"></i> Konsultasi </a>
+              <div class="service-contact-btn">
+                <a
+                  href="https://wa.me/6281991405758?text=Saya%20ingin%20konsultasi%20tentang%20Perkara%20Perbankan"
+                  class="btn-whatsapp"
+                  style="width: 100%; justify-content: center"
+                >
+                  <i class="fab fa-whatsapp"></i> Konsultasi
+                </a>
               </div>
             </div>
           </div>
 
-          <!-- Layanan 3 -->
+          <!-- Layanan Kepailitan -->
           <div class="service-card fade-in-up">
             <div class="service-card-header">
-              <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Hukum Bisnis" />
+              <img
+                src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
+                alt="Kepailitan & PKPU"
+              />
               <div class="service-card-overlay">
-                <div class="service-icon"><i class="fas fa-briefcase"></i></div>
-                <h3 style="color: white; font-size: 1.3rem">Hukum Bisnis</h3>
+                <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                <h3 style="color: white; font-size: 1.4rem">Kepailitan & PKPU</h3>
               </div>
             </div>
             <div class="service-card-body">
-              <h3>Hukum Bisnis</h3>
-              <p>Konsultasi hukum untuk bisnis mulai dari pendirian perusahaan, kontrak bisnis, hingga penyelesaian sengketa korporasi.</p>
-
+              <h3>Kepailitan & PKPU</h3>
+              <p>
+                Pendampingan profesional dalam perkara kepailitan dan Penundaan
+                Kewajiban Pembayaran Utang (PKPU) dengan menjaga integritas dan
+                etika profesi advokat.
+              </p>
               <ul class="service-features">
-                <li><i class="fas fa-check-circle"></i> Pendirian perusahaan</li>
-                <li><i class="fas fa-check-circle"></i> Penyusunan kontrak dan perjanjian</li>
-                <li><i class="fas fa-check-circle"></i> Legal due diligence</li>
-                <li><i class="fas fa-check-circle"></i> Restrukturisasi perusahaan</li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Strategi hukum dalam
+                  perkara kepailitan
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Pendampingan Kurator &
+                  Pengurus
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Perdamaian PKPU &
+                  Homologasi
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Pembelaan terhadap
+                  pengurus/debitur
+                </li>
               </ul>
-
-              <div class="service-price">
-                <div class="price-tag">Rp 3.000.000<span> / paket</span></div>
-                <a href="https://wa.me/6281991495758?text=Saya%20ingin%20konsultasi%20tentang%20hukum%20bisnis" class="btn-whatsapp"> <i class="fab fa-whatsapp"></i> Konsultasi </a>
+              <div class="service-contact-btn">
+                <a
+                  href="https://wa.me/6281991405758?text=Saya%20ingin%20konsultasi%20tentang%20Kepailitan%20dan%20PKPU"
+                  class="btn-whatsapp"
+                  style="width: 100%; justify-content: center"
+                >
+                  <i class="fab fa-whatsapp"></i> Konsultasi
+                </a>
               </div>
             </div>
           </div>
@@ -1361,104 +1451,83 @@
       </div>
     </section>
 
-    <!-- PARTNER KUASA HUKUM (Mengganti Testimoni) -->
+    <!-- PARTNER -->
     <section class="partners section-padding" id="partner">
       <div class="container">
         <div class="section-title">
           <h2>Partner Kuasa Hukum Kami</h2>
-          <p>Berkolaborasi dengan para kuasa hukum profesional yang berpengalaman dalam berbagai bidang hukum untuk memberikan solusi terbaik kepada klien.</p>
+          <p>
+            Didukung oleh para profesional hukum yang berpengalaman untuk
+            memberikan layanan yang tepat, terukur, dan berintegritas.
+          </p>
         </div>
 
         <div class="partners-grid">
-          <!-- Partner 1 -->
           <div class="partner-card fade-in">
-            <div class="partner-avatar">
-              <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Dr. H. Rizky Pratama, S.H., M.H." />
-            </div>
-            <h3>Dr. H. Rizky Pratama, S.H., M.H.</h3>
-            <div class="partner-specialization">Spesialis Hukum Pidana & Bisnis</div>
-            <div class="partner-description">Pengacara berpengalaman lebih dari 15 tahun di bidang hukum pidana dan bisnis. Berpengalaman menangani kasus-kasus korporasi dan kejahatan kerah putih.</div>
-            <div class="partner-experience">
-              <div class="experience-item">
-                <div class="experience-number">15+</div>
-                <div class="experience-label">Tahun Pengalaman</div>
-              </div>
-              <div class="experience-item">
-                <div class="experience-number">500+</div>
-                <div class="experience-label">Kasus Berhasil</div>
-              </div>
-            </div>
-            <div class="partner-contact">
-              <a href="https://wa.me/6281991495758?text=Saya%20ingin%20berkonsultasi%20dengan%20Dr.%20Rizky%20Pratama"> <i class="fab fa-whatsapp"></i> Konsultasi via WhatsApp </a>
+            <img
+              src="assets/lawyer/Imamsyafii.jpg"
+              alt="IMAM SYAFI’I, S.H, M.H."
+            />
+            <div class="partner-overlay">
+              <div class="partner-name">IMAM SYAFI’I, S.H, M.H.</div>
+              <div class="partner-role">Partner Kuasa Hukum</div>
             </div>
           </div>
 
-          <!-- Partner 2 -->
           <div class="partner-card fade-in">
-            <div class="partner-avatar">
-              <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Diana Sari, S.H., M.Kn." />
-            </div>
-            <h3>Diana Sari, S.H., M.Kn.</h3>
-            <div class="partner-specialization">Spesialis Hukum Keluarga & Perdata</div>
-            <div class="partner-description">Advokat spesialis hukum keluarga dan perdata dengan pendekatan mediasi yang humanis. Berpengalaman dalam penyelesaian sengketa waris, perceraian, dan hak asuh anak.</div>
-            <div class="partner-experience">
-              <div class="experience-item">
-                <div class="experience-number">12+</div>
-                <div class="experience-label">Tahun Pengalaman</div>
-              </div>
-              <div class="experience-item">
-                <div class="experience-number">300+</div>
-                <div class="experience-label">Kasus Selesai</div>
-              </div>
-            </div>
-            <div class="partner-contact">
-              <a href="https://wa.me/6281991495758?text=Saya%20ingin%20berkonsultasi%20dengan%20Ibu%20Diana%20Sari"> <i class="fab fa-whatsapp"></i> Konsultasi via WhatsApp </a>
+            <img
+              src="assets/lawyer/purdiyanyo.jpg"
+              alt="PURDIYANYO, S.H."
+            />
+            <div class="partner-overlay">
+              <div class="partner-name">PURDIYANYO, S.H.</div>
+              <div class="partner-role">Partner Kuasa Hukum</div>
             </div>
           </div>
 
-          <!-- Partner 3 -->
           <div class="partner-card fade-in">
-            <div class="partner-avatar">
-              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Bambang Wijaya, S.H., LL.M." />
-            </div>
-            <h3>Bambang Wijaya, S.H., LL.M.</h3>
-            <div class="partner-specialization">Spesialis Hukum Perburuhan & Ketenagakerjaan</div>
-            <div class="partner-description">Pakar hukum ketenagakerjaan dengan spesialisasi penyelesaian sengketa perburuhan, PHK, dan hak-hak pekerja. Berpengalaman sebagai konsultan hukum untuk perusahaan-perusahaan besar.</div>
-            <div class="partner-experience">
-              <div class="experience-item">
-                <div class="experience-number">18+</div>
-                <div class="experience-label">Tahun Pengalaman</div>
-              </div>
-              <div class="experience-item">
-                <div class="experience-number">400+</div>
-                <div class="experience-label">Kasus Ditangani</div>
-              </div>
-            </div>
-            <div class="partner-contact">
-              <a href="https://wa.me/6281991495758?text=Saya%20ingin%20berkonsultasi%20dengan%20Bapak%20Bambang%20Wijaya"> <i class="fab fa-whatsapp"></i> Konsultasi via WhatsApp </a>
+            <img
+             src="assets/lawyer/arief.jpg "
+              alt="ARIF FAKHRUDIN, S.H."
+            />
+            <div class="partner-overlay">
+              <div class="partner-name">ARIF FAKHRUDIN, S.H.</div>
+              <div class="partner-role">Partner Kuasa Hukum</div>
             </div>
           </div>
 
-          <!-- Partner 4 -->
           <div class="partner-card fade-in">
-            <div class="partner-avatar">
-              <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Maya Dewi, S.H., M.H." />
+            <img
+               src="assets/lawyer/hilmi.jpg"
+              alt="HILMI MUHAMMAD, S.H., M.H"
+            />
+            <div class="partner-overlay">
+              <div class="partner-name">HILMI MUHAMMAD, S.H., M.H</div>
+              <div class="partner-role">Partner Kuasa Hukum</div>
             </div>
-            <h3>Maya Dewi, S.H., M.H.</h3>
-            <div class="partner-specialization">Spesialis Hukum Agraria & Properti</div>
-            <div class="partner-description">Ahli hukum properti dan agraria dengan fokus pada sengketa tanah, sertifikat hak milik, dan pengadaan tanah untuk pembangunan. Berpengalaman dalam litigasi dan non-litigasi.</div>
-            <div class="partner-experience">
-              <div class="experience-item">
-                <div class="experience-number">10+</div>
-                <div class="experience-label">Tahun Pengalaman</div>
+          </div>
+
+          <div class="partner-card fade-in">
+            <img
+              src="assets/lawyer/shokib.jpg"
+              alt="Shokib Mahendra, S.H., M.H., CTL., CLA., CLI., C.med., CIR"
+            />
+            <div class="partner-overlay">
+              <div class="partner-name">
+                Shokib Mahendra, S.H., M.H., CTL., CLA., CLI., C.med., CIR
               </div>
-              <div class="experience-item">
-                <div class="experience-number">250+</div>
-                <div class="experience-label">Kasus Properti</div>
-              </div>
+              <div class="partner-role">Partner Kuasa Hukum</div>
             </div>
-            <div class="partner-contact">
-              <a href="https://wa.me/6281991495758?text=Saya%20ingin%20berkonsultasi%20dengan%20Ibu%20Maya%20Dewi"> <i class="fab fa-whatsapp"></i> Konsultasi via WhatsApp </a>
+          </div>
+
+          <div class="partner-card fade-in">
+            <img
+             src="assets/lawyer/iqbal.jpg"
+              alt="Muhammad Iqbal S.H."
+            />
+            <div class="partner-overlay">
+              <div class="partner-name">Muhammad Iqbal S.H.</div>
+              <div class="partner-role">Partner Kuasa Hukum</div>
             </div>
           </div>
         </div>
@@ -1470,7 +1539,11 @@
       <div class="container contact-container">
         <div class="contact-info fade-in-up">
           <h2>Hubungi Kami</h2>
-          <p>Konsultasikan masalah hukum Anda dengan tim ahli kami. Kami siap membantu Anda dengan solusi hukum yang tepat dan profesional.</p>
+          <p>
+            Konsultasikan masalah hukum Anda bersama tim kami. Kami siap
+            membantu Anda dengan pendekatan yang profesional, terukur, dan
+            berorientasi pada solusi.
+          </p>
 
           <div class="contact-details">
             <div class="contact-item">
@@ -1479,34 +1552,43 @@
               </div>
               <div class="contact-text">
                 <h4>Alamat Kantor</h4>
-                <p>Jl. Gajah Mada, Kalikembang, Kalisapu, Kec. Slawi, Kabupaten Tegal, Jawa Tengah 52416</p>
+                <p>
+                  Jl. Gajah Mada, Kalikembang, Kalisapu, Kec. Slawi, Kabupaten
+                  Tegal, Jawa Tengah 52416
+                </p>
               </div>
             </div>
+
             <div class="contact-item">
               <div class="contact-icon">
                 <i class="fas fa-phone"></i>
               </div>
               <div class="contact-text">
                 <h4>Telepon</h4>
-                <p>0819 9149 5758</p>
+                <p>0819 9140 5758</p>
               </div>
             </div>
+
             <div class="contact-item">
               <div class="contact-icon">
                 <i class="fas fa-envelope"></i>
               </div>
               <div class="contact-text">
                 <h4>Email</h4>
-                <p>info@joyokusumotegal.com</p>
+                <p>info@asokanadia.com</p>
               </div>
             </div>
+
             <div class="contact-item">
               <div class="contact-icon">
                 <i class="fas fa-clock"></i>
               </div>
               <div class="contact-text">
                 <h4>Jam Operasional</h4>
-                <p>Senin - Jumat: 09.00 - 17.00 WIB<br />Sabtu: 09.00 - 13.00 WIB</p>
+                <p>
+                  Senin - Jumat: 09.00 - 17.00 WIB<br />
+                  Sabtu: 09.00 - 13.00 WIB
+                </p>
               </div>
             </div>
           </div>
@@ -1519,30 +1601,40 @@
               <label for="name">Nama Lengkap</label>
               <input type="text" id="name" name="name" required />
             </div>
+
             <div class="form-group">
               <label for="phone">Nomor Telepon</label>
               <input type="tel" id="phone" name="phone" required />
             </div>
+
             <div class="form-group">
               <label for="email">Email</label>
               <input type="email" id="email" name="email" />
             </div>
+
             <div class="form-group">
               <label for="service">Jenis Layanan</label>
               <select id="service" name="service">
                 <option value="">Pilih Layanan</option>
-                <option value="pidana">Hukum Pidana</option>
-                <option value="perdata">Hukum Perdata</option>
-                <option value="bisnis">Hukum Bisnis</option>
-                <option value="keluarga">Hukum Keluarga</option>
-                <option value="perburuhan">Hukum Perburuhan</option>
+                <option value="Perdata Agama">Perdata Agama</option>
+                <option value="Perbankan">Perbankan</option>
+                <option value="Kepailitan & PKPU">Kepailitan & PKPU</option>
               </select>
             </div>
+
             <div class="form-group">
               <label for="message">Pesan</label>
-              <textarea id="message" name="message" rows="4" required></textarea>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+              ></textarea>
             </div>
-            <button type="submit" class="btn btn-primary" style="width: 100%"><i class="fas fa-paper-plane"></i> Kirim Pesan</button>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%">
+              <i class="fas fa-paper-plane"></i> Kirim Pesan
+            </button>
           </form>
         </div>
       </div>
@@ -1553,8 +1645,14 @@
       <div class="container">
         <div class="footer-container">
           <div class="footer-about">
-            <div class="footer-logo">JOYO KUSUMO<br /><span style="font-size: 1.2rem">Kantor Hukum Tegal</span></div>
-            <p>Kantor Hukum Joyo Kusumo Tegal memberikan solusi hukum komprehensif dengan integritas, profesionalisme, dan komitmen untuk mencapai keadilan bagi klien di wilayah Tegal dan sekitarnya.</p>
+            <div class="footer-logo">
+              ASOKA NADIA<br /><span>Law Firm</span>
+            </div>
+            <p>
+              Law Firm Asoka Nadia memberikan solusi hukum komprehensif dengan
+              integritas, profesionalisme, dan komitmen untuk mencapai keadilan
+              bagi klien di wilayah Tegal, Slawi, dan sekitarnya.
+            </p>
             <div class="social-links">
               <a href="#"><i class="fab fa-facebook-f"></i></a>
               <a href="#"><i class="fab fa-twitter"></i></a>
@@ -1567,35 +1665,38 @@
             <h3>Layanan Kami</h3>
             <ul>
               <li>
-                <a href="#layanan"><i class="fas fa-chevron-right"></i> Hukum Pidana</a>
+                <a href="#layanan"
+                  ><i class="fas fa-chevron-right"></i> Perdata Agama</a
+                >
               </li>
               <li>
-                <a href="#layanan"><i class="fas fa-chevron-right"></i> Hukum Perdata</a>
+                <a href="#layanan"
+                  ><i class="fas fa-chevron-right"></i> Perbankan & Kredit</a
+                >
               </li>
               <li>
-                <a href="#layanan"><i class="fas fa-chevron-right"></i> Hukum Bisnis</a>
-              </li>
-              <li>
-                <a href="#layanan"><i class="fas fa-chevron-right"></i> Hukum Keluarga</a>
-              </li>
-              <li>
-                <a href="#layanan"><i class="fas fa-chevron-right"></i> Hukum Perburuhan</a>
+                <a href="#layanan"
+                  ><i class="fas fa-chevron-right"></i> Kepailitan & PKPU</a
+                >
               </li>
             </ul>
           </div>
 
           <div class="footer-contact">
             <h3>Kontak Kami</h3>
-            <p><i class="fas fa-map-marker-alt"></i> Jl. Gajah Mada, Kalikembang, Kalisapu, Kec. Slawi, Kabupaten Tegal, Jawa Tengah 52416</p>
-            <p><i class="fas fa-phone"></i> 0819 9149 5758</p>
-            <p><i class="fas fa-envelope"></i> info@joyokusumotegal.com</p>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> Jl. Gajah Mada, Kalikembang,
+              Kalisapu, Kec. Slawi, Kabupaten Tegal, Jawa Tengah 52416
+            </p>
+            <p><i class="fas fa-phone"></i> 0819 9140 5758</p>
+            <p><i class="fas fa-envelope"></i> info@asokanadia.com</p>
             <p><i class="fas fa-clock"></i> Senin - Jumat: 09.00 - 17.00 WIB</p>
             <p><i class="fas fa-clock"></i> Sabtu: 09.00 - 13.00 WIB</p>
           </div>
         </div>
 
         <div class="footer-bottom">
-          <p>&copy; 2023 Kantor Hukum Joyo Kusumo Tegal. All rights reserved.</p>
+          <p>&copy; 2024 Law Firm Asoka Nadia. All rights reserved.</p>
         </div>
       </div>
     </footer>
@@ -1609,18 +1710,23 @@
       function toggleMobileMenu() {
         navLinks.classList.toggle("active");
         mobileMenuOverlay.classList.toggle("active");
-        mobileMenuBtn.innerHTML = navLinks.classList.contains("active") ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
-
-        // Prevent body scrolling when menu is open
-        document.body.style.overflow = navLinks.classList.contains("active") ? "hidden" : "";
+        mobileMenuBtn.innerHTML = navLinks.classList.contains("active")
+          ? '<i class="fas fa-times"></i>'
+          : '<i class="fas fa-bars"></i>';
+        document.body.style.overflow = navLinks.classList.contains("active")
+          ? "hidden"
+          : "";
       }
 
       mobileMenuBtn.addEventListener("click", toggleMobileMenu);
       mobileMenuOverlay.addEventListener("click", toggleMobileMenu);
 
-      // Close mobile menu when clicking on a link
       document.querySelectorAll(".nav-links a").forEach((link) => {
-        link.addEventListener("click", toggleMobileMenu);
+        link.addEventListener("click", () => {
+          if (navLinks.classList.contains("active")) {
+            toggleMobileMenu();
+          }
+        });
       });
 
       // Scroll animation
@@ -1631,52 +1737,48 @@
 
       const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("fade-in-up");
-          }
+          if (entry.isIntersecting) entry.target.classList.add("fade-in-up");
         });
       }, observerOptions);
 
-      // Observe elements for animation
-      document.querySelectorAll(".service-card, .hero-content, .hero-image, .about-content, .about-image, .contact-info, .contact-form, .partner-card").forEach((el) => {
-        observer.observe(el);
-      });
+      document
+        .querySelectorAll(
+          ".service-card, .hero-content, .hero-image, .about-content, .about-image, .contact-info, .contact-form, .partner-card"
+        )
+        .forEach((el) => observer.observe(el));
 
       // Header scroll effect
       window.addEventListener("scroll", () => {
         const header = document.querySelector("header");
         if (window.scrollY > 100) {
           header.style.padding = "10px 0";
-          header.style.boxShadow = "0 5px 20px rgba(42, 92, 126, 0.15)";
+          header.style.boxShadow = "0 10px 28px rgba(15, 23, 42, 0.1)";
         } else {
-          header.style.padding = "15px 0";
-          header.style.boxShadow = "0 5px 20px rgba(42, 92, 126, 0.08)";
+          header.style.padding = "14px 0";
+          header.style.boxShadow = "0 10px 30px rgba(15, 23, 42, 0.06)";
         }
       });
 
       // Form submission
-      document.getElementById("consultationForm").addEventListener("submit", function (e) {
-        e.preventDefault();
+      document
+        .getElementById("consultationForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const name = document.getElementById("name").value;
+          const phone = document.getElementById("phone").value;
+          const service = document.getElementById("service").value || "kebutuhan hukum";
+          const message = document.getElementById("message").value;
 
-        const name = document.getElementById("name").value;
-        const phone = document.getElementById("phone").value;
-        const service = document.getElementById("service").value;
-        const message = document.getElementById("message").value;
+          const whatsappMessage = `Halo, saya ${name} ingin konsultasi tentang ${service}. ${message}. Nomor telepon saya: ${phone}`;
+          const encodedMessage = encodeURIComponent(whatsappMessage);
+          const whatsappURL = `https://wa.me/6281991405758?text=${encodedMessage}`;
 
-        // Create WhatsApp message
-        const whatsappMessage = `Halo, saya ${name} ingin konsultasi tentang ${service}. ${message}. Nomor telepon saya: ${phone}`;
-        const encodedMessage = encodeURIComponent(whatsappMessage);
-        const whatsappURL = `https://wa.me/6281991495758?text=${encodedMessage}`;
-
-        // Open WhatsApp
-        window.open(whatsappURL, "_blank");
-
-        // Reset form
-        this.reset();
-
-        // Show success message
-        alert("Terima kasih! Anda akan diarahkan ke WhatsApp untuk melanjutkan konsultasi.");
-      });
+          window.open(whatsappURL, "_blank");
+          this.reset();
+          alert(
+            "Terima kasih! Anda akan diarahkan ke WhatsApp untuk melanjutkan konsultasi."
+          );
+        });
     </script>
   </body>
 </html>
